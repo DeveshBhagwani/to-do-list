@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PPlanner — Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+<div class="logo">PPlanner</div>
+<nav>
+<a href="index.html" class="navlink">Logout</a>
+<a href="planner.html" class="navlink">Planner</a>
+<a href="dashboard.html" class="navlink">Dashboard</a>
+</nav>
+</header>
+<main>
+<section class="view app-view">
+<header class="app-header">
+<div>
+<h2 class="greet">Hello, Student</h2>
+<p class="sub">Study tasks • Placement prep • Reminders</p>
+</div>
+<nav class="mini-nav">
+<a href="#tasks" class="chip">Tasks</a>
+<a href="#templates" class="chip">Templates</a>
+<a href="planner.html" class="chip">Placement Planner</a>
+</nav>
+</header>
+
+<section id="tasks" class="panel">
+<div class="panel-head">
+<h3>To-Do — Study & Placement Tasks</h3>
+<div class="progress-wrap">
+<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+
+<ul class="tasks expanded">
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">✓</span></label>
+<div class="task-body" contenteditable="true" spellcheck="false">Revise algorithms — graphs</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">✓</span></label>
+<div class="task-body" contenteditable="true" spellcheck="false">Complete mock test on Aptitude portal</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">✓</span></label>
+<div class="task-body" contenteditable="true" spellcheck="false">Prepare elevator pitch</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">✓</span></label>
+<div class="task-body" contenteditable="true" spellcheck="false">Mock interview: system design</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">✓</span></label>
+<div class="task-body" contenteditable="true" spellcheck="false">Study company profile for interviews</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">✓</span></label>
+<div class="task-body" contenteditable="true" spellcheck="false">Set up portfolio and GitHub README</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">+</span></label>
+<div id="slot1" class="task-body" contenteditable="true" spellcheck="false">Click to add a custom task</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">+</span></label>
+<div id="slot2" class="task-body" contenteditable="true" spellcheck="false">Add another quick task</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">+</span></label>
+<div id="slot3" class="task-body" contenteditable="true" spellcheck="false">Extra slot — type here</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">+</span></label>
+<div id="slot4" class="task-body" contenteditable="true" spellcheck="false">Extra slot — type here</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">+</span></label>
+<div id="slot5" class="task-body" contenteditable="true" spellcheck="false">Extra slot — type here</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+<li class="task">
+<label class="check"><input type="checkbox" /><span class="tick">+</span></label>
+<div id="slot6" class="task-body" contenteditable="true" spellcheck="false">Extra slot — type here</div>
+<div class="meta"><time>Due: <input type="date" /></time>
+<label class="fav"><input type="checkbox" /><span class="star">★</span></label>
+</div>
+</li>
+
+</ul>
+</section>
+
+<section id="templates" class="panel templates-panel">
+<div class="panel-head">
+<h3>Task Templates</h3>
+</div>
+
+<div class="templates-grid">
+<article class="template-card">
+<div class="tpl-title">Aptitude Practice</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Daily: 30 min aptitude (quant & reasoning). Use mock portal and track score.</div>
+<div class="tpl-tags">aptitude • timed</div>
+<div class="tpl-actions">
+<a class="use-btn" href="#slot1">Use Slot 1 ↗</a>
+<a class="copy-hint" href="#slot1">Jump → Paste</a>
+</div>
+</article>
+
+<article class="template-card">
+<div class="tpl-title">Coding Problem Sprint</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Solve 2 medium problems (array/graphs). Implement in Git, add short notes.</div>
+<div class="tpl-tags">coding • git • algorithms</div>
+<div class="tpl-actions">
+<a class="use-btn" href="#slot2">Use Slot 2 ↗</a>
+<a class="copy-hint" href="#slot2">Jump → Paste</a>
+</div>
+</article>
+
+<article class="template-card">
+<div class="tpl-title">Resume Update</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Update projects section: add 1-2 bullet points with impact and link to demo/GitHub.</div>
+<div class="tpl-tags">resume • polish</div>
+<div class="tpl-actions">
+<a class="use-btn" href="#slot3">Use Slot 3 ↗</a>
+<a class="copy-hint" href="#slot3">Jump → Paste</a>
+</div>
+</article>
+
+<article class="template-card">
+<div class="tpl-title">Mock Interview</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">45-minute technical mock + 15-minute feedback. Focus on system design or algorithms.</div>
+<div class="tpl-tags">interview • mock</div>
+<div class="tpl-actions">
+<a class="use-btn" href="#slot4">Use Slot 4 ↗</a>
+<a class="copy-hint" href="#slot4">Jump → Paste</a>
+</div>
+</article>
+
+<article class="template-card">
+<div class="tpl-title">Company Research</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Read company's tech blog, recent hires, interview experiences on forums; prepare 3 tailored questions.</div>
+<div class="tpl-tags">research • interview prep</div>
+<div class="tpl-actions">
+<a class="use-btn" href="#slot5">Use Slot 5 ↗</a>
+<a class="copy-hint" href="#slot5">Jump → Paste</a>
+</div>
+</article>
+
+<article class="template-card">
+<div class="tpl-title">Behavioral Prep</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Prepare STAR answers for 6 common behavioral prompts; rehearse aloud for confidence and pacing.</div>
+<div class="tpl-tags">behavioral • confidence</div>
+<div class="tpl-actions">
+<a class="use-btn" href="#slot6">Use Slot 6 ↗</a>
+<a class="copy-hint" href="#slot6">Jump → Paste</a>
+</div>
+</article>
+
+<article class="template-card wide">
+<div class="tpl-title">Networking & Follow-up</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Send follow-up emails to recruiters, connect on LinkedIn with a short note; schedule reminders to follow up again in 7 days.</div>
+<div class="tpl-tags">networking • email</div>
+<div class="tpl-actions">
+<a class="use-btn" href="#slot1">Use Slot 1 ↗</a>
+<a class="copy-hint" href="#slot2">Jump → Paste</a>
+</div>
+</article>
+
+</div>
+
+<div class="templates-note">Tip: click a template to jump to an empty slot, then paste the template text (select the template text and Ctrl+C / Cmd+C first).</div>
+</section>
+
+<section id="profile" class="panel">
+<div class="panel-head">
+<h3>Profile & quick actions</h3>
+</div>
+<div class="grid">
+<div class="card small">
+<h5>Contact</h5>
+<p class="muted">you@college.edu • 9876******</p>
+</div>
+<div class="card small">
+<h5>Focus mode</h5>
+<label class="toggle">
+<input type="checkbox" />
+<span>Enable</span>
+</label>
+</div>
+<div class="card small">
+<h5>Open Planner</h5>
+<a class="btn primary" href="planner.html">Open Placement Planner</a>
+</div>
+</div>
+</section>
+
+<footer class="app-footer">
+<p class="muted">Tip: click a template, then select its text and copy. Jump to a slot and paste — contenteditable fields keep your text locally while the page is open.</p>
+</footer>
+
+</section>
+</main>
+</div>
+</body>
+</html>

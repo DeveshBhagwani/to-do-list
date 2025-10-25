@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PPlanner — Login</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+<div class="logo">PPlanner</div>
+<nav>
+<a href="index.html" class="navlink">Login</a>
+<a href="dashboard.html" class="navlink">Dashboard</a>
+<a href="planner.html" class="navlink">Planner</a>
+</nav>
+</header>
+<main>
+<section class="view login-view">
+<div class="card login-card">
+<h1>Welcome back</h1>
+<form class="login-form" action="dashboard.html" method="get">
+<label class="field">
+<span class="label">College email</span>
+<input required type="email" name="email" placeholder="you@college.edu" />
+</label>
+<label class="field">
+<span class="label">Mobile number</span>
+<input required type="tel" name="mobile" placeholder="9876543210" pattern="[0-9]{10}" />
+</label>
+<div class="row">
+<button class="btn primary" type="submit">Login / Continue</button>
+<a class="btn ghost" href="signup.html">Create account</a>
+</div>
+</form>
+</div>
+</section>
+</main>
+</div>
+</body>
+</html>

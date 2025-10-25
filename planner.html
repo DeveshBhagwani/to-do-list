@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PPlanner — Placement Planner</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="shell">
+<header class="topbar">
+<div class="logo">PPlanner</div>
+<nav>
+<a href="dashboard.html" class="navlink">Dashboard</a>
+<a href="index.html" class="navlink">Logout</a>
+</nav>
+</header>
+<main>
+<section class="view app-view placements">
+<header class="app-header">
+<div>
+<h2 class="greet">Placement Planner</h2>
+<p class="sub">Schedule: pre-placement talks, online tests, interviews</p>
+</div>
+<nav class="mini-nav">
+<a href="dashboard.html" class="chip">Back</a>
+</nav>
+</header>
+
+<section class="panel">
+<div class="panel-head">
+<h3>Events & Alerts</h3>
+</div>
+
+<div class="cards large">
+<article class="card event">
+<h4>Pre-placement Talk</h4>
+<div class="ev-controls">
+<label class="ev-time">When <input type="time" /></label>
+<label class="switch"><input id="alert-pp" type="checkbox" /><span class="slider">Set Alert</span></label>
+</div>
+<div class="ev-note" contenteditable="true" spellcheck="false">Location: Auditorium A • Speaker: HR Team</div>
+<div class="bell"><div class="ring"></div><div class="dot"></div></div>
+<div class="toast" data-for="pp">Reminder active: Pre-placement talk</div>
+</article>
+
+<article class="card event">
+<h4>Online Test</h4>
+<div class="ev-controls">
+<label class="ev-time">When <input type="time" /></label>
+<label class="switch"><input id="alert-ot" type="checkbox" /><span class="slider">Set Alert</span></label>
+</div>
+<div class="ev-note" contenteditable="true" spellcheck="false">Platform: testportal.example • Duration: 90 mins</div>
+<div class="bell"><div class="ring"></div><div class="dot"></div></div>
+<div class="toast" data-for="ot">Reminder active: Online test</div>
+</article>
+
+<article class="card event">
+<h4>Interview Slot</h4>
+<div class="ev-controls">
+<label class="ev-time">When <input type="time" /></label>
+<label class="switch"><input id="alert-int" type="checkbox" /><span class="slider">Set Alert</span></label>
+</div>
+<div class="ev-note" contenteditable="true" spellcheck="false">Panel: Core Team • Venue: Room 204</div>
+<div class="bell"><div class="ring"></div><div class="dot"></div></div>
+<div class="toast" data-for="int">Reminder active: Interview</div>
+</article>
+
+<article class="card event">
+<h4>Resume Review Session</h4>
+<div class="ev-controls">
+<label class="ev-time">When <input type="time" /></label>
+<label class="switch"><input id="alert-resume" type="checkbox" /><span class="slider">Set Alert</span></label>
+</div>
+<div class="ev-note" contenteditable="true" spellcheck="false">Mentor: Career Cell • Bring printed copy</div>
+<div class="bell"><div class="ring"></div><div class="dot"></div></div>
+<div class="toast" data-for="resume">Reminder active: Resume review</div>
+</article>
+
+</div>
+
+</section>
+
+<section class="panel templates-panel">
+<div class="panel-head"><h3>Quick Templates</h3></div>
+
+<div class="templates-grid">
+<article class="template-card">
+<div class="tpl-title">Quick Interview Prep</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">30-min focused prep: read last 3 interview experiences, jot down sample questions.</div>
+<div class="tpl-tags">interview • quick</div>
+<div class="tpl-actions"><a class="use-btn" href="#slot1">Jump to Dashboard Slot 1</a></div>
+</article>
+
+<article class="template-card">
+<div class="tpl-title">Test Setup Checklist</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Check laptop, browser, webcam, stable network. Restart 10 mins before test.</div>
+<div class="tpl-tags">test • checklist</div>
+<div class="tpl-actions"><a class="use-btn" href="#slot2">Jump to Dashboard Slot 2</a></div>
+</article>
+
+<article class="template-card">
+<div class="tpl-title">Interview Follow-up</div>
+<div class="tpl-body" contenteditable="true" spellcheck="false">Send polite thank-you email to interviewer within 24 hours; highlight 1 key takeaway.</div>
+<div class="tpl-tags">follow-up • email</div>
+<div class="tpl-actions"><a class="use-btn" href="#slot3">Jump to Dashboard Slot 3</a></div>
+</article>
+</div>
+
+<div class="templates-note">Tip: select template text and copy it, then go to Dashboard slots and paste into any contenteditable task field.</div>
+</section>
+
+<footer class="app-footer">
+<p class="muted">Set alerts to see animated bells and toast reminders on this page. Use templates to speed up task creation.</p>
+</footer>
+
+</section>
+</main>
+</div>
+</body>
+</html>
